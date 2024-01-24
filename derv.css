@@ -1,4 +1,12 @@
+:root
+{
+    --primary: rgb(24, 42, 45);
+    --secondary: rgb(0, 232, 252);
+    --tertiary: #cbdedf;
+}
+
 body
 {
-    background-color: black;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
