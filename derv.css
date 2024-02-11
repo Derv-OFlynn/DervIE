@@ -2,11 +2,58 @@
 {
     --primary: rgb(24, 42, 45);
     --secondary: rgb(0, 232, 252);
-    --tertiary: #cbdedf;
+    --secondaryFade: rgba(0, 232, 252, 0.5);
+    --tertiary: rgb(203,222,223);
+    --tertiaryFade: rgba(203,222,223, 0.5);
 }
 
 body
 {
     background-color: var(--primary);
     color: var(--secondary);
+    font-family: Ubuntu Mono;
+}
+
+.menu
+{
+    display: grid;
+    place-items: center;
+}
+
+.DContainer
+{
+    display: grid;
+    place-items: center;
+    color: var(--tertiary);
+}
+
+.current
+{
+    border-bottom: 3px dotted var(--tertiaryFade);
+}
+
+.current:hover
+{
+    border-bottom: 3px dotted var(--secondaryFade);
+}
+
+.navbar-dark .navbar-nav .nav-link 
+{
+    color: var(--tertiary);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover 
+{
+    color: var(--secondary);
+}
+
+.navbar-toggler:hover, .navbar-toggler.navbar-toggler:focus
+{
+    background-color: var(--secondary);
+}
+
+.heading
+{
+    color: var(--secondary);
+    border-bottom: 3px dotted var(--secondaryFade);
 }
