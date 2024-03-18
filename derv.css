@@ -18,6 +18,7 @@ body
 {
     display: grid;
     place-items: center;
+    transition-duration: 0.5s;
 }
 
 .DContainer
@@ -82,7 +83,7 @@ footer
 {
     background-color: var(--secondary);
     border: 2px solid var(--secondary);
-    border-radius: 5px;
+    border-radius: 15px;
     /*height, width, blur, spread, colour. No VSC documentation RIP*/
     box-shadow: -2px 3px 1px 2px var(--secondaryFade);
 }
@@ -90,21 +91,35 @@ footer
 .ghbox:hover
 {
     background-color: var(--secondaryFade);
-    border: 0px solid;
-    border-radius: 5px;
     box-shadow: -2px 3px 1px 2px var(--tertiaryFade);
 }
 
 .libox
 {
     background-color: rgb(0, 102, 156);
-    border-radius: 5px;
+    border-radius: 15px;
     border: 0px solid;
     box-shadow: -2px 3px 1px 2px var(--secondaryFade);
 }
 
 .libox:hover
 {
-    /*opacity: 0.5;*/
+    opacity: 0.5;
     box-shadow: -2px 3px 1px 2px var(--tertiaryFade);
+}
+
+
+@keyframes derveloper
+{
+    from{color:var(--secondary);}
+    to{color:rgba(0,0,0,0);}
+}
+
+.flicker
+{
+    color: var(--secondary);
+    animation-name: derveloper;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
