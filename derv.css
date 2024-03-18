@@ -82,7 +82,7 @@ footer
 {
     background-color: var(--secondary);
     border: 2px solid var(--secondary);
-    border-radius: 20px;
+    border-radius: 5px;
     /*height, width, blur, spread, colour. No VSC documentation RIP*/
     box-shadow: -2px 3px 1px 2px var(--secondaryFade);
 }
@@ -91,19 +91,20 @@ footer
 {
     background-color: var(--secondaryFade);
     border: 0px solid;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: -2px 3px 1px 2px var(--tertiaryFade);
 }
 
 .libox
 {
-    border-radius: 20px;
+    background-color: rgb(0, 102, 156);
+    border-radius: 5px;
     border: 0px solid;
     box-shadow: -2px 3px 1px 2px var(--secondaryFade);
 }
 
 .libox:hover
 {
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     box-shadow: -2px 3px 1px 2px var(--tertiaryFade);
 }
