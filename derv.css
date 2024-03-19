@@ -7,6 +7,8 @@
     --tertiaryFade: rgba(203,222,223, 0.5);
 }
 
+
+
 body
 {
     background-color: var(--primary);
@@ -115,10 +117,25 @@ footer
     to{color:rgba(0,0,0,0);}
 }
 
+@keyframes derveloper2
+{
+    from{color:rgba(0,0,0,0);}
+    to{color:var(--secondary);}
+}
+
 .flicker
 {
     color: var(--secondary);
     animation-name: derveloper;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.flicker2
+{
+    color: var(--secondary);
+    animation-name: derveloper2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
