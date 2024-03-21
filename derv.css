@@ -7,7 +7,11 @@
     --tertiaryFade: rgba(203,222,223, 0.5);
 }
 
-
+.container
+{
+    display: grid;
+    place-items: center;
+}
 
 body
 {
@@ -92,7 +96,7 @@ footer
 
 .ghbox:hover
 {
-    background-color: var(--secondaryFade);
+    opacity: 0.5;
     box-shadow: -2px 3px 1px 2px var(--tertiaryFade);
 }
 
@@ -139,4 +143,16 @@ footer
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.pflink, .pflink:active, .pflink:visited
+{
+    color: var(--tertiary);
+    text-align: left;
+}
+
+.pflink:hover
+{
+    text-decoration: underline var(--secondaryFade);
+    color: var(--secondary);
 }
