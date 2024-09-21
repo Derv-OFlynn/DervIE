@@ -1,7 +1,5 @@
 <!--
     Programmer: Derv O'Flynn 
-    Start Date: 24/01/2024
-    Last Updated: 11/02/2024
     Description: Portfolio site
 -->
 <html lang="en">
@@ -25,36 +23,46 @@
     </head>
 
     <body>
+        <br>
         <!--Main Menu-->
         <div class="menu">
 
-            <h1>DE<span class="flicker">R</span>V</h1>
+            <div class="row">
+                <h1>DE<span class="flicker">R</span>V</h1>
+            </div>
 
-            <!--Bootstrap Nav-bar-->
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="row">
+                <!--Bootstrap Nav-bar-->
+                <nav class="navbar navbar-expand-lg navbar-dark">
 
-                <!--If the screen is narrow, the nav-bar will collapse into a toggle-able button that reformats it vertically-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!--If the screen is narrow, the nav-bar will collapse into a toggle-able button that reformats it vertically-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        
+                        
+                        <ul class="navbar-nav">
+                            <!--Link to current page if user needs to refresh -->
+                            <div class="col">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html"><h2>Home</h2></a>
+                                </li>
+                            </div>
+                            <!--Links to the other pages -->
+                            <div class="col">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html"><h2 class="current">Portfolio</h2></a>
+                                </li>
+                            </div>
+                        
+                        </ul>
                     
-                    <ul class="navbar-nav">
-                        <!--Link to current page if user needs to refresh -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html"><h2>Home</h2></a>
-                        </li>
-                        <!--Links to the other pages -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html"><h2 class="current">Portfolio</h2></a>
-                        </li>
-                    
-                    </ul>
+                    </div>
                 
-                </div>
-            
-            </nav> 
+                </nav> 
+            </div> 
 
         </div>
 
@@ -64,61 +72,170 @@
         <!--Content-->
         <br>
 
-        <br>
 
-        <div class="DContainer">
-
-            <h4 class="heading">Python</h4>
-
-            <br> <br>
-
-            <p>Link Slayer</p>
-        </div>
-
-        <br>
 
         <div class="container">
             
             <div class="row align-items-start">
-                
                 <div class="col">
-
-                    <h4 class="heading">Web Development</h4>
-                
-                </div>
-            
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <h5>Site</h5>
-                </div>
-                <div class="col">
-                    <h5>GitHub</h5>
+                    <h3 class="heading"><span class="headingBorder">Web Development</span></h3>
                 </div>
             </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <h4 class="pfheading">Site</h4>
+                </div>
+                <div class="col-4">
+                    <h4 class="pfheading">GitHub</h4>
+                </div>
+                <div class="col-2"></div>
+            </div>
             
             <div class="row">
-
-                <div class="col">
+                <div class="col-2"></div>
+                <div class="col-4">
                     <a class="pflink" href="https://kilmacudscouts.ie">Kilmacud Scouts Website</a>
                 </div>
 
-                <div class="col">
+                <div class="col-4">
                     <a class="pflink" href="https://github.com/Derv-OFlynn/Kilmacud_Scouts">GitHub: Kilmacud_Scouts</a>
                 </div>
+                <div class="col-2"></div>
             </div>
 
-            <div class="row">
-                <div class="col">
+            <div class ="row">
+                <div class="col-2"></div>
+                <div class="col-4">
                     <a class="pflink" href="https://cristinamcevoy.ie">Cristina McEvoy Portfolio</a>
                 </div>
 
-                <div class="col">
+                <div class="col-4">
                     <a class="pflink" href="https://github.com/Derv-OFlynn/CrissyMcEvoy">GitHub: CrissyMcEvoy </a>
                 </div>
+                <div class="col-2"></div>
             </div>
         </div>
+
+        <div class="container">
+        
+            <br> <br>
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <h3 class="heading"><span class="headingBorder"> Python </span></h3>
+                </div>
+            </div>
+            
+            <br>
+
+            <!-- First row for column headings -->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <h4 class="pfheading">Project</h4>
+                </div>
+                <div class="col-4">
+                    <h4 class="pfheading">Description</h4>
+                </div>
+                <div class="col-3">
+                    <h4 class="pfheading">GitHub</h4>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        
+            <!-- Second row for project entries -->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <p class="pfname">Link Slayer</p>
+                </div>
+                <div class="col-4">
+                    <p class="pftext">Removes links and hightlight formatting from text files for TTS accessibility</p>
+                </div>
+                <div class="col-3">
+                    <a class="pflink" href="https://github.com/Derv-OFlynn/LinkSlayer">GitHub: Link Slayer</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <p class="pfname">R2O (Remnote to Obsidian)</p>
+                </div>
+                <div class="col-4">
+                    <p class="pftext">Converts Remnote files to Obsidian-friendly markdown. Preserves highlighting colour across formats.</p>
+                </div>
+                <div class="col-3">
+                    <a class="pflink" href="https://github.com/Derv-OFlynn/R2O">GitHub: R2O</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        
+        </div>
+
+        <div class="container">
+        
+            <br> <br>
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <h3 class="heading"><span class="headingBorder">Game Development</span></h3>
+                </div>
+            </div>
+            
+            <br>
+
+            <!-- First row for column headings -->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <h4 class="pfheading">Project</h4>
+                </div>
+                <div class="col-4">
+                    <h4 class="pfheading">Description</h4>
+                </div>
+                <div class="col-3">
+                    <h4 class="pfheading">GitHub</h4>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        
+            <!-- Second row for project entries -->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <p class="pfname">Segmentation Fault</p>
+                </div>
+                <div class="col-4">
+                    <p class="pftext">Space action-adventure VR Game for the Meta Quest 3. Made in Godot with GD Script. Awarded "Highly Commended" at Games Fleadh 2024</p>
+                </div>
+                <div class="col-3">
+                    <a class="pflink" href="https://github.com/Games-Fleadh/segmentation-fault">GitHub: Segmentation Fault</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <p class="pfname">Captivation Portal</p>
+                </div>
+                <div class="col-4">
+                    <p class="pftext">A productivity app to allow multi-party markdown note-taking on the left. Youtube videos, such as Subway Surfers, on the right. Made in Godot with GD Script.</p>
+                </div>
+                <div class="col-3">
+                    <a class="pflink" href="https://github.com/ana-rchy/hackathon">GitHub: Captivation Portal</a>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        
+        </div>
+        
 
         <!--End content section-->
 
