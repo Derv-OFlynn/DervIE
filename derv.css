@@ -7,12 +7,6 @@
     --tertiaryFade: rgba(203,222,223, 0.5);
 }
 
-.container
-{
-    display: grid;
-    place-items: center;
-}
-
 body
 {
     background-color: var(--primary);
@@ -32,6 +26,9 @@ body
     display: grid;
     place-items: center;
     color: var(--tertiary);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
 }
 
 .current
@@ -62,6 +59,11 @@ body
 .heading
 {
     color: var(--secondary);
+    text-align: center;
+}
+
+.headingBorder
+{
     border-bottom: 3px dotted var(--secondaryFade);
 }
 
@@ -148,11 +150,40 @@ footer
 .pflink, .pflink:active, .pflink:visited
 {
     color: var(--tertiary);
-    text-align: left;
+    text-decoration: underline var(--tertiaryFade);
+    text-align: center;
+    display: grid;
 }
 
 .pflink:hover
 {
     text-decoration: underline var(--secondaryFade);
     color: var(--secondary);
+}
+
+.pfheading
+{
+    text-align: center;
+}
+
+.pftext
+{
+    color: var(--tertiary);
+    text-align: left;
+}
+
+.pfname
+{
+    color: var(--tertiary);
+    text-align:center;
+}
+
+.deis
+{
+    text-align: right;
+}
+
+.clé
+{
+    text-align: left;
 }
